@@ -2,9 +2,9 @@
 def canVisitAllRooms(rooms):
     stack = [0]
     mem = set(stack)
-    while len(stack) > 0:
-        node = stack.pop()
-        for e in rooms[node]:
+    while stack:
+        n = stack.pop()
+        for e in rooms[n]:
             if e not in mem:
                 mem.add(e)
                 if len(mem) == len(rooms):
