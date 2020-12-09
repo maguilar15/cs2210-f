@@ -6,7 +6,7 @@
 python main.py
 ```
 
-|#  | Problems | 
+|#  | Code | 
 |---| ------------- |
 | 1| [Network Delay Time](https://github.com/maguilar15/cs2210-f/blob/main/network_delay_time/solve.py)| 
 | 3| [Redundant Connection](https://github.com/maguilar15/cs2210-f/blob/main/redundant_connection/solve.py) |
