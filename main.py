@@ -3,14 +3,6 @@ from count_servers_that_communicate.solve import countServers
 from network_delay_time.solve import networkDelayTime
 from redundant_connection.solve import redundantConnection
 
-# Problem Set
-links = dict(
-    NetworkDelayTime="https://leetcode.com/problems/network-delay-time/",
-    RedundantConnection="https://leetcode.com/problems/redundant-connection/",
-    CountServers="https://leetcode.com/problems/count-servers-that-communicate/",
-    KeysAndRooms="https://leetcode.com/problems/keys-and-rooms/",
-)
-
 if __name__ == "__main__":
     print(f"* Keys and Rooms")
     p1 = [[1],[2],[3],[]]
