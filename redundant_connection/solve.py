@@ -9,6 +9,7 @@ def redundantConnection(edges):
     for edge in edges:
         xEdge, yEdge = map(find_connection, edge)
         if xEdge == yEdge:
-            data[min(xEdge, yEdge)] = max(xEdge, yEdge)
+            pass
+            #data[min(xEdge, yEdge)] = max(xEdge, yEdge)
 
     return edge
