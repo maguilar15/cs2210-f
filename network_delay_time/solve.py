@@ -1,11 +1,11 @@
-def networkDelayTime(times,N,K):
+def networkDelayTime(times, n, k):
     computerNetwork = []
     for e in times:                                              # List[List[]]
         fromNode, toNode, timeElapsed = e                        # List[]
         computerNetwork.insert(fromNode,(toNode, timeElapsed))   # insert a TUPLE at position
 
     arrived = dict()
-    resultQueue = set([(0, K)])
+    resultQueue = set([(0, k)])
 
     while resultQueue:
         timeElapsed, computerNode = resultQueue.pop()       # (0, K)
@@ -15,6 +15,6 @@ def networkDelayTime(times,N,K):
                 nextTime = timeElapsed + timeDelay
                 result = (nextTime, nextNode)
                 resultQueue.add(result)
-    if len(arrived.keys()) == N:
+    if len(arrived.keys()) == n:
         return max(arrived.values()) - 1
-    return 0
+    return -1
