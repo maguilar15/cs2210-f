@@ -7,13 +7,13 @@ def networkDelayTime(times,N,K):
     arrived = dict()
     resultQueue = set([(0, K)])
 
-    while len(resultQueue) > 0:
+    while resultQueue:
         timeElapsed, computerNode = resultQueue.pop()       # (0, K)
         if computerNode not in arrived:
             arrived[computerNode] = timeElapsed
             for nextNode, timeDelay in computerNetwork:
-                next_time = timeElapsed + timeDelay
-                result = (next_time, nextNode)
+                nextTime = timeElapsed + timeDelay
+                result = (nextTime, nextNode)
                 resultQueue.add(result)
     if len(arrived.keys()) == N:
         return max(arrived.values()) - 1
